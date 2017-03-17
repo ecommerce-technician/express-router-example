@@ -7,9 +7,6 @@ var router = express.Router(),
 router
     .use(function timeLog(req, res, next) {
         var allowedOrigins = [
-            'http://bundleslang.node.tech',
-            '104.236.23.95:3100',
-            'http://localhost:63342',
             'http://localhost:3100',
             'http://millennialagency.com'];
         var origin = req.headers.origin;
